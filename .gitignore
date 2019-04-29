@@ -1,0 +1,21 @@
+.gradle
+build/
+out/
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+*.class
+
+# Package Files #
+*.jar
+!gradle-wrapper.jar
+*.war
+*.ear
+
+*.iml
+*.ipr
+*.iws
+
+*.log
+.idea/
