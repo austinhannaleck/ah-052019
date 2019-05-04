@@ -1,0 +1,28 @@
+plugins {
+    id "java"
+    id "com.github.johnrengelman.shadow" version "4.0.0"
+}
+
+group 'cardinal'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'org.hamcrest:hamcrest-library:1.3'
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'pos'
+        )
+    }
+}
