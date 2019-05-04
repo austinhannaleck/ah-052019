@@ -49,6 +49,7 @@ public class pos {
 
         checkout = new Checkout(toolManager);
 
+        System.out.println("Welcome to Cardinal POS!");
         while(run.equals("y")) {
             boolean validRentalAgreement = false;
             RentalAgreement rentalAgreement = null;
@@ -65,7 +66,7 @@ public class pos {
             }
 
             if(validRentalAgreement) {
-                System.out.println("Generating rental agreement");
+                System.out.println("\nGenerating rental agreement");
                 System.out.println("***");
                 System.out.println("Tool code: " + rentalAgreement.getToolCode());
                 System.out.println("Tool type: " + rentalAgreement.getToolType());
@@ -100,7 +101,7 @@ public class pos {
         rentalDays = Integer.parseInt(input.nextLine());
         System.out.println("Please input the checkout date (mm/dd/yy):");
         checkoutDate = input.nextLine();
-        System.out.println("Add a percentage discount if applicable:");
+        System.out.println("Add a percentage discount if applicable (0-100):");
         discount = Integer.parseInt(input.nextLine());
     }
 }
